@@ -1,0 +1,19 @@
+.header {
+  padding: 24px 0;
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__favourite {
+    position: relative;
+    width: 24px;
+    height: 24px;
+
+    &._active {
+      filter: invert(42%) sepia(93%) saturate(2094%) hue-rotate(331deg) brightness(96%) contrast(137%);
+    }
+  }
+}

@@ -1,0 +1,59 @@
+.comments {
+  padding: 60px 0;
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+
+  &__item {
+    position: relative;
+    border: 1px solid $blue;
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  &__name {
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  &__message {
+    margin-bottom: 20px;
+    font-weight: 300;
+  }
+
+  &__date {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+  }
+
+  &__delete {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+  }
+
+  &__favourite {
+    position: absolute;
+    right: 12px;
+    background-color: unset;
+    bottom: 12px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+
+    &._active {
+      filter: invert(42%) sepia(93%) saturate(2094%) hue-rotate(331deg) brightness(96%) contrast(137%);
+    }
+  }
+}
